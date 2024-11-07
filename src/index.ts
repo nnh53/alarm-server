@@ -36,7 +36,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/get_setting', (req, res) => {
-  res.json({ date: "2024;11;8" })
+  res.json({ date: "2024;11;8;5;43:00" });
 })
 
 app.post('/post_setting', (req, res) => {
