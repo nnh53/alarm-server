@@ -29,19 +29,19 @@ app.use(express.json())
 //   next()
 // })
 
-let currentAlarm = "";
+let currentAlarm = "2024;11;13;58;43;00";
 
 app.get('/', (req, res) => {
   res.send('hello world')
 })
 
 app.get('/get_setting', (req, res) => {
-  res.json({ date: "2024;11;13;50;43;00" });
+  res.json({ date: currentAlarm });
 })
 
 app.post('/post_setting', (req:any, res:any) => {
   console.log(req.body)
-  console.log("ahihi")
+  console.log("update to")
   currentAlarm = req.body.date;
   console.log(currentAlarm)
   res.json({ status: "success" });
