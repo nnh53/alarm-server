@@ -11,8 +11,8 @@ const app = express()
 // initFolder()
 
 const corsOptions = {
-  origin: `*`,
-  credentials: true,
+  origin: '*',
+  credentials: false,
   allowedHeaders: 'Content-Type,Authorization',
   optionsSuccessStatus: 200
 }
